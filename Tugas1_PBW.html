@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran Mahasiswa</title>
+    <link rel="stylesheet" href="./Tugas1.css" />
+  </head>
+  <body>
+    <h1>Form Pendaftaran Mahasiswa</h1>
+    <div class="Formpendaftaran">
+      <form action="">
+        <p>Nama Lengkap :</p>
+        <input type="text" name="Namalengkap" placeholder="Masukan Nama Lengkap" required />
+        <p>NIM :</p>
+        <input type="text" name="NIM" pattern="[A-Z]{1}[0-9]{2}[.]{1}[0-9]{4}[.]{1}[0-9]{5}" placeholder="Masukkan NIM" required />
+        <p>Tempat Lahir :</p>
+        <input type="text" name="tempat lahir" placeholder="Tempat Lahir Anda" required />
+        <p>Tanggal Lahir :</p>
+        <input type="date" name="tanggal lahir" required />
+        <p>Alamat :</p>
+        <textarea name="alamat" id="#" cols="30" rows="2" required></textarea>
+        <p>Jenis Kelamin :</p>
+        <input type="radio" name="Jeniskelamin" value="1" required /> Laki-laki <input type="radio" name="Jeniskelamin" value="2" required /> Perempuan
+        <p>E-mail :</p>
+        <input type="email" name="e-mail" placeholder="E-mail Anda" required />
+        <p>Jurusan :</p>
+        <select name="jurusan" required>
+          <option selected="select">-=pilih=-</option>
+          <option value="S1 Teknik Informatika">S1 Teknik Informatika</option>
+          <option value="D3 Teknik Informatika">D3 Teknik Informatika</option>
+          <option value="Sistem Informasi">Sistem Informasi</option>
+          <option value="Desain Komunikasi Visual">Desain Komunikasi Visual</option>
+          <option value="Ilmu Komunikasi">Ilmu Komunikasi</option>
+          <option value="Film dan Televisi">Film dan Televisi</option>
+          <option value="Animasi">Animasi</option>
+          <option value="Broadcasting">Broadcasting</option>
+        </select>
+        <p>Minat Bakat :</p>
+        <input type="checkbox" name="minat[0]" value="Olahraga" />Olahraga <br />
+        <input type="checkbox" name="minat[1]" value="Memasak" />Memasak <br />
+        <input type="checkbox" name="minat[2]" value="Musik" />Musik <br />
+        <input type="checkbox" name="minat[3]" value="Akademik" />Akademik <br />
+        <input type="checkbox" name="minat[4]" value="Seni" />Seni <br />
+        <br />
+
+        <input type="Submit" name="tombol" value="Submit" />
+        <input type="reset" value="Reset" />
+      </form>
+    </div>
+    <br>
+    <footer>
+        <hr>
+             <p style="text-align: center;"> Copyright &copy 2021 | Design by Itsna Maulana Hasan </p>
+       </footer>
+  </body>
+</html>
